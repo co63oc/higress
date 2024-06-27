@@ -14,7 +14,7 @@
 |  block_bodies     |  array of string     | Optional. Choose one from following: `block_urls` ,`block_headers`, `block_bodies` |  -  |  HTTP request bodies to be blocked.  |
 |  blocked_code     |  number     |  Optional     |   403  |  HTTP response status code to be sent when corresponding request is blocked.  |
 |  blocked_message     |  string     |  Optional   |   -  |  HTTP response body to be sent when corresponding request is blocked.   |
-|  case_sensitive     |  bool     |  Optional     |   true  |  Whether to use case-senstive comparison when matching. Enabled by default.   |
+|  case_sensitive     |  bool     |  Optional     |   true  |  Whether to use case-sensitive comparison when matching. Enabled by default.   |
 
 # Configuration Samples
 

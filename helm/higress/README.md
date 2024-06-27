@@ -42,10 +42,10 @@ The command removes all the Kubernetes components associated with the chart and 
 | global.enableIstioAPI | If `true`, Higress Controller will monitor istio resources as well | false |
 | global.enableGatewayAPI | If `true`, Higress Controller will monitor Gateway API resources as well | false |
 | global.istioNamespace | The namespace istio is installed to | istio-system |
-| **Core Paramters** |  |  |
+| **Core Parameters** |  |  |
 | higress-core.gateway.replicas | Number of Higress Gateway pods | 2 |
 | higress-core.controller.replicas | Number of Higress Controller pods | 1 |
-| **Console Paramters** |  |  |
+| **Console Parameters** |  |  |
 | higress-console.replicaCount | Number of Higress Console pods | 1 |
 | higress-console.service.type | K8s service type used by Higress Console | ClusterIP |
 | higress-console.domain | Domain used to access Higress Console | console.higress.io |
@@ -53,5 +53,5 @@ The command removes all the Kubernetes components associated with the chart and 
 | higress-console.web.login.prompt | Prompt message to be displayed on the login page | "" |
 | higress-console.admin.password.value | If not empty, the admin password will be configured to the specified value. | "" |
 | higress-console.admin.password.length | The length of random admin password generated during installation. Only works when `higress-console.admin.password.value` is not set. | 8 |
-| higress-console.o11y.enabled | If `true`, o11y suite (Grafana + Promethues) will be installed. | false |
+| higress-console.o11y.enabled | If `true`, o11y suite (Grafana + Prometheus) will be installed. | false |
 | higress-console.pvc.rwxSupported | Set to `false` when installing to a standard K8s cluster and the target cluster doesn't support the ReadWriteMany access mode of PersistentVolumeClaim. | true |
